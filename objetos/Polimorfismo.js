@@ -67,6 +67,11 @@ function CP(agencia, conta, saldo) {
 CP.prototype = Object.create(Conta.prototype);
 CP.prototype.constructor = CP;
 
+/*
+    Objeto Conta Corrente utilizando o metodo:
+    depositar() da superclass e o metodo sacar() sobrescrito.
+*/
+
 const cc = new CC(11, 22, 0, 100);
 cc.depositar(10);
 cc.sacar(110);
@@ -74,6 +79,12 @@ cc.sacar(1);
 
 console.log();
 
+/*
+    Objeto Conta Poupança utilizando os metodos:
+    - depositar()
+    - sacar()
+    da superclass
+*/
 const cp = new CP(12, 33, 0);
 cp.depositar(10);
 cp.sacar(110);
