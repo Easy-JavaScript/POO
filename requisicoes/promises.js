@@ -10,7 +10,9 @@ function esperaAi(msg, tempo) {
     // resolve: retornou com sucesso resolve ai pra mim
     // reject: deu erro no retorno, rejeita ai pra mim
     return new Promise((resolve, reject) => {
+
         if(typeof msg !== 'string') reject(new Error('ERRO'));
+        
         setTimeout(() => {
             resolve(msg); // Chamou o método resolve(), o método then() será usado. Chamou o método reject(), o método catch() será usado.
         }, tempo);
