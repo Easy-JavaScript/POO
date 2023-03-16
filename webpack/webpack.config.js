@@ -3,7 +3,7 @@ const path = require('path'); // CommonJS é o padrão do node. usa-se muito o r
 
 module.exports = {
     mode: 'production',
-    entry: './src/index.js',
+    entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, 'public', 'assets', 'js'), // pega o arquivo principal dentro da pasta public/assets/js
         filename: 'bundle.js',
@@ -18,6 +18,9 @@ module.exports = {
                     presets: ['@babel/env']
                 }
             }
+        }, {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
         }]
     },
     devtool: 'source-map' // mapeia o arquivo bundle caso der algum erro.
