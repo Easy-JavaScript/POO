@@ -34,4 +34,5 @@ console.log(p1);
     Podemos importar o elemento padrão, não utilizamos as {}.
     ex: import exemploDefault, { elem1, elem2 ...}
 
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
 */
