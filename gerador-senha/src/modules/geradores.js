@@ -19,6 +19,7 @@ export default function geraSenha(qtd, maiusculas, minusculas, numeros, simbolos
     const senhaArray = [];
     qtd = Number(qtd);
 
+
     for (let i = 0; i < qtd; i++) {
         // a cada iteração do laço, é inserido no array senhaArray uma letra Maiuscula uma letra Minuscula, um número e um simbolo
         maiusculas && senhaArray.push(geraMaiuscula());
@@ -29,5 +30,3 @@ export default function geraSenha(qtd, maiusculas, minusculas, numeros, simbolos
 
     return senhaArray.join('').slice(0, qtd);
 }
-
-// 25:28
