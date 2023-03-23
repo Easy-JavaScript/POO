@@ -1,5 +1,5 @@
 /*
-    O uso do try/catch eh uma especie de if, mas para tratar
+    O uso do try/catch/throw eh uma especie de if, mas para tratar
     erros.
 
     try {
